@@ -85,5 +85,5 @@ function shalat1($keyword) {
     return $result;
 }
 
-echo shalat1($_GET['kota'])."Kamu";
+echo shalat1($_GET['kota']);
 ?>
