@@ -195,86 +195,46 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-  'type' => 'template',
-  'altText' => 'Product Beras Bulog',
-  'template' => 
-  array (
-    'type' => 'carousel',
-    'columns' => 
-    array (
-      0 => 
-      array (
-        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'Beras Renceng',
-        'text' => 'Beras jenis premium produksi dalam negeri jenis IR 64 bertekstur nasi pulen',
-        'defaultAction' => 
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
-        ),
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Buy',
-            'data' => 'action=buy&itemid=111',
-          ),
-          1 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Add to cart',
-            'data' => 'action=add&itemid=111',
-          ),
-          2 => 
-          array (
-            'type' => 'uri',
-            'label' => 'View detail',
-            'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
-          ),
-        ),
-      ),
-      1 => 
-      array (
-        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/24/36214999/36214999_1402ec49-21f3-458c-a32b-a2d1d297b996_1200_1200.jpg',
-        'imageBackgroundColor' => '#000000',
-        'title' => 'BerasKita Premium - Kemasan 1kg',
-        'text' => 'Produksi petani Indonesia yang bebas pemutih, bebas pengawet, dan bebas pewangi yang diolah dengan teknologi modern.',
-        'defaultAction' => 
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
-        ),
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Buy',
-            'data' => 'action=buy&itemid=222',
-          ),
-          1 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Add to cart',
-            'data' => 'action=add&itemid=222',
-          ),
-          2 => 
-          array (
-            'type' => 'uri',
-            'label' => 'View detail',
-            'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
-          ),
-        ),
-      ),
-    ),
-    'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
-  ),
-)
+                  'type' => 'template',
+                  'altText' => 'This is a buttons template',
+                  'template' => 
+                  array (
+                    'type' => 'buttons',
+                    'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
+                    'imageAspectRatio' => 'rectangle',
+                    'imageSize' => 'cover',
+                    'imageBackgroundColor' => '#FFFFFF',
+                    'title' => 'Menu',
+                    'text' => 'Please select',
+                    'defaultAction' => 
+                    array (
+                      'type' => 'uri',
+                      'label' => 'View detail',
+                      'uri' => 'http://example.com/page/123',
+                    ),
+                    'actions' => 
+                    array (
+                      0 => 
+                      array (
+                        'type' => 'postback',
+                        'label' => 'Buy',
+                        'data' => 'action=buy&itemid=123',
+                      ),
+                      1 => 
+                      array (
+                        'type' => 'postback',
+                        'label' => 'Add to cart',
+                        'data' => 'action=add&itemid=123',
+                      ),
+                      2 => 
+                      array (
+                        'type' => 'uri',
+                        'label' => 'View detail',
+                        'uri' => 'http://example.com/page/123',
+                      ),
+                    ),
+                  ),
+                )
             )
         );
         /*$balas = array(
