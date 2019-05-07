@@ -204,15 +204,15 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
+        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/17/36214999/36214999_d6c2f2fb-6f26-4914-a2b6-57343145af2e_1036_1036.png',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'this is menu',
-        'text' => 'description',
+        'title' => 'Beras Renceng',
+        'text' => 'jenis IR 64, Pulen, 250g',
         'defaultAction' => 
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => 'http://example.com/page/123',
+          'uri' => 'https://www.tokopedia.com/perumbulog/20-pcs-beras-sachet-beraskita-kemasan-200-gram?m_id=14345918',
         ),
         'actions' => 
         array (
@@ -232,7 +232,7 @@ if($message['type']=='text') {
           array (
             'type' => 'uri',
             'label' => 'View detail',
-            'uri' => 'http://example.com/page/111',
+            'uri' => 'https://www.tokopedia.com/perumbulog/20-pcs-beras-sachet-beraskita-kemasan-200-gram?m_id=14345918',
           ),
         ),
       ),
@@ -240,13 +240,13 @@ if($message['type']=='text') {
       array (
         'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/24/36214999/36214999_1402ec49-21f3-458c-a32b-a2d1d297b996_1200_1200.jpg',
         'imageBackgroundColor' => '#000000',
-        'title' => 'this is menu',
-        'text' => 'description',
+        'title' => 'Beras 1 Kg',
+        'text' => 'jenis IR 64, Pulen, 1Kg',
         'defaultAction' => 
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => 'http://example.com/page/222',
+          'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
         ),
         'actions' => 
         array (
@@ -266,7 +266,7 @@ if($message['type']=='text') {
           array (
             'type' => 'uri',
             'label' => 'View detail',
-            'uri' => 'http://example.com/page/222',
+            'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
           ),
         ),
       ),
