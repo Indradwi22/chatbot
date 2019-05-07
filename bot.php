@@ -23,6 +23,88 @@ $type 		= $client->parseEvents()[0]['type'];
 $message 	= $client->parseEvents()[0]['message'];
 $messageid 	= $client->parseEvents()[0]['message']['id'];
 
+$template = array (
+  'type' => 'template',
+  'altText' => 'Product Beras Bulog',
+  'template' => 
+  array (
+    'type' => 'carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'Beras Renceng',
+        'text' => 'Beras jenis premium produksi dalam negeri jenis IR 64 bertekstur nasi pulen',
+        'defaultAction' => 
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
+        ),
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Buy',
+            'data' => 'action=buy&itemid=111',
+          ),
+          1 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Add to cart',
+            'data' => 'action=add&itemid=111',
+          ),
+          2 => 
+          array (
+            'type' => 'uri',
+            'label' => 'View detail',
+            'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/24/36214999/36214999_1402ec49-21f3-458c-a32b-a2d1d297b996_1200_1200.jpg',
+        'imageBackgroundColor' => '#000000',
+        'title' => 'BerasKita Premium - Kemasan 1kg',
+        'text' => 'Produksi petani Indonesia yang bebas pemutih, bebas pengawet, dan bebas pewangi yang diolah dengan teknologi modern.',
+        'defaultAction' => 
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
+        ),
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Buy',
+            'data' => 'action=buy&itemid=222',
+          ),
+          1 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Add to cart',
+            'data' => 'action=add&itemid=222',
+          ),
+          2 => 
+          array (
+            'type' => 'uri',
+            'label' => 'View detail',
+            'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+);
+
 $profil = $client->profil($userId);
 
 $pesan_datang = explode(" ", $message['text']);
@@ -109,92 +191,19 @@ if($message['type']=='text') {
             )
         );
     }else if ($command == '/template'){
-        $balas = array(
+            $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
-                array (
-  'type' => 'template',
-  'altText' => 'Product Beras Bulog',
-  'template' => 
-  array (
-    'type' => 'carousel',
-    'columns' => 
-    array (
-      0 => 
-      array (
-        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'Beras Renceng',
-        'text' => 'Beras jenis premium produksi dalam negeri jenis IR 64 bertekstur nasi pulen',
-        'defaultAction' => 
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
-        ),
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Buy',
-            'data' => 'action=buy&itemid=111',
-          ),
-          1 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Add to cart',
-            'data' => 'action=add&itemid=111',
-          ),
-          2 => 
-          array (
-            'type' => 'uri',
-            'label' => 'View detail',
-            'uri' => 'https://www.tokopedia.com/perumbulog/beras-kita?m_id=14345918',
-          ),
-        ),
-      ),
-      1 => 
-      array (
-        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/24/36214999/36214999_1402ec49-21f3-458c-a32b-a2d1d297b996_1200_1200.jpg',
-        'imageBackgroundColor' => '#000000',
-        'title' => 'BerasKita Premium - Kemasan 1kg',
-        'text' => 'Produksi petani Indonesia yang bebas pemutih, bebas pengawet, dan bebas pewangi yang diolah dengan teknologi modern.',
-        'defaultAction' => 
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
-        ),
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Buy',
-            'data' => 'action=buy&itemid=222',
-          ),
-          1 => 
-          array (
-            'type' => 'postback',
-            'label' => 'Add to cart',
-            'data' => 'action=add&itemid=222',
-          ),
-          2 => 
-          array (
-            'type' => 'uri',
-            'label' => 'View detail',
-            'uri' => 'https://www.tokopedia.com/perumbulog/beraskita-premium-kemasan-1kg?m_id=14345918',
-          ),
-        ),
-      ),
-    ),
-    'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
-  ),
-)
+                array(
+                    'type' => 'text',
+                    'text' => 'coba'
+                )
             )
-        ); 
+        );
+        /*$balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array($template)
+        );*/ 
     }
 
 }else if($message['type']=='sticker')
