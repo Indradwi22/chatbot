@@ -193,7 +193,7 @@ if($message['type']=='text') {
     }else if ($command == '/template'){
         $balas = array(
             'replyToken' => $replyToken,
-            'messages' => $template
+            'messages' => array($template)
         ); 
     }
 
