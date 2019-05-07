@@ -195,46 +195,86 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-                  'type' => 'template',
-                  'altText' => 'This is a buttons template',
-                  'template' => 
-                  array (
-                    'type' => 'buttons',
-                    'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
-                    'imageAspectRatio' => 'rectangle',
-                    'imageSize' => 'cover',
-                    'imageBackgroundColor' => '#FFFFFF',
-                    'title' => 'Menu',
-                    'text' => 'Please select',
-                    'defaultAction' => 
-                    array (
-                      'type' => 'uri',
-                      'label' => 'View detail',
-                      'uri' => 'http://example.com/page/123',
-                    ),
-                    'actions' => 
-                    array (
-                      0 => 
-                      array (
-                        'type' => 'postback',
-                        'label' => 'Buy',
-                        'data' => 'action=buy&itemid=123',
-                      ),
-                      1 => 
-                      array (
-                        'type' => 'postback',
-                        'label' => 'Add to cart',
-                        'data' => 'action=add&itemid=123',
-                      ),
-                      2 => 
-                      array (
-                        'type' => 'uri',
-                        'label' => 'View detail',
-                        'uri' => 'http://example.com/page/123',
-                      ),
-                    ),
-                  ),
-                )
+  'type' => 'template',
+  'altText' => 'this is a carousel template',
+  'template' => 
+  array (
+    'type' => 'carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2018/9/4/36214999/36214999_202f8b56-f969-46d7-a3cb-be56a4622468_2048_2048.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'this is menu',
+        'text' => 'description',
+        'defaultAction' => 
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://example.com/page/123',
+        ),
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Buy',
+            'data' => 'action=buy&itemid=111',
+          ),
+          1 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Add to cart',
+            'data' => 'action=add&itemid=111',
+          ),
+          2 => 
+          array (
+            'type' => 'uri',
+            'label' => 'View detail',
+            'uri' => 'http://example.com/page/111',
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'thumbnailImageUrl' => 'https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/1/24/36214999/36214999_1402ec49-21f3-458c-a32b-a2d1d297b996_1200_1200.jpg',
+        'imageBackgroundColor' => '#000000',
+        'title' => 'this is menu',
+        'text' => 'description',
+        'defaultAction' => 
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://example.com/page/222',
+        ),
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Buy',
+            'data' => 'action=buy&itemid=222',
+          ),
+          1 => 
+          array (
+            'type' => 'postback',
+            'label' => 'Add to cart',
+            'data' => 'action=add&itemid=222',
+          ),
+          2 => 
+          array (
+            'type' => 'uri',
+            'label' => 'View detail',
+            'uri' => 'http://example.com/page/222',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+)
             )
         );
         /*$balas = array(
